@@ -5,7 +5,6 @@ import Home from './components/Home';
 import NurseList from './components/NurseList'
 import PatientList from './components/PatientList'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import NewPatient from './components/NewPatient';
 
 
 
