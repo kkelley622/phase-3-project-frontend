@@ -24,9 +24,6 @@ const App = () => {
         <Route exact path= "/patients">
           <PatientList />
         </Route>
-        <Route exact path= "/new_patient">
-          <NewPatient />
-        </Route>
       </Switch>
     </Router>
   )

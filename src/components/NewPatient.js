@@ -5,7 +5,7 @@ const NewPatient = ( {handleSubmit} ) => {
         firstname: "",
         lastname: "",
         age: 0,
-        room_number: 0,
+        room_number: 750,
         diagnosis: "", 
         nurse_id: 0
     })
@@ -25,9 +25,6 @@ const NewPatient = ( {handleSubmit} ) => {
             nurse_id: 0
         })
       }
-
-    
-
 
   return (
     <div>
@@ -54,7 +51,7 @@ const NewPatient = ( {handleSubmit} ) => {
                 <br></br>
             <label>Age: </label>
                 <input
-                    type="text" 
+                    type="number" 
                     name="age" 
                     aria-label="age"
                     value={formData.age}
@@ -64,10 +61,12 @@ const NewPatient = ( {handleSubmit} ) => {
                 <br></br>
             <label>Room Number: </label>
                 <input
-                    type="text" 
+                    type="number" 
                     name="room_number" 
                     aria-label="room_number"
                     value={formData.room_number}
+                    min={750}
+                    max={780}
                     onChange={handleChange}
                     required
                 />
@@ -82,9 +81,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Nurse: </label>
+            <label>Nurse ID: </label>
                 <input
-                    type="text" 
+                    type="number" 
                     name="nurse_id" 
                     aria-label="nurse_id"
                     value={formData.nurse_id}
