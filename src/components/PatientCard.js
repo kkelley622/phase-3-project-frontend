@@ -1,6 +1,17 @@
 import React from 'react'
 
-const PatientCard = ( {patient} ) => {
+const PatientCard = ( {patient, onDeletePatient} ) => {
+
+  const handleDeleteClick = () => {
+    fetch(`http://localhost:9292/patients/${patient.id}`, {
+      method: 'DELETE'
+    })
+    .then(res => res.json())
+    .then(patient => onDeletePatient(patient))
+  }
+
+ 
+
   return (
     <div>
       <div className="card">
@@ -9,7 +20,7 @@ const PatientCard = ( {patient} ) => {
           <p className="card-text">Room Number: {patient.room_number}</p>
           <p className="card-text">Diagnosis: {patient.diagnosis}</p>
           <p className="card-text">Nurse: {patient.nurse.firstname}</p>
-          <button>DISCHARGE</button>
+          <button onClick={handleDeleteClick}>DISCHARGE</button>
         </div>
       </div>
     </div>

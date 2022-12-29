@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import NurseList from './components/NurseList'
@@ -10,35 +10,7 @@ import NewPatient from './components/NewPatient';
 
 
 const App = () => {
-  const [nurses, setNurses] = useState([])
-  const [patients, setPatients] = useState([])
   
-  useEffect(() => {
-    fetch("http://localhost:9292/nurses")
-    .then(response => response.json())
-    .then(data => setNurses(data))
-  }, []);
-
-  useEffect(() => {
-    fetch("http://localhost:9292/patients")
-    .then(response => response.json())
-    .then(data => setPatients(data))
-  }, [])
-
-  const handlePatientSubmit = (e, patientObj) => {
-    console.log(patientObj)
-    e.preventDefault()
-    fetch("http://localhost:9292/patients", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-          },
-        body: JSON.stringify(patientObj)
-    })
-    .then(res => res.json())
-    .then(data => setPatients([data, ...patients]))
-}
-
   return (
     <Router>
       <Navbar />
@@ -47,13 +19,13 @@ const App = () => {
           <Home />
         </Route>
         <Route exact path= "/nurses">
-          <NurseList nurses={nurses}/>
+          <NurseList />
         </Route>
         <Route exact path= "/patients">
-          <PatientList patients={patients}/>
+          <PatientList />
         </Route>
         <Route exact path= "/new_patient">
-          <NewPatient handleSubmit={handlePatientSubmit}/>
+          <NewPatient />
         </Route>
       </Switch>
     </Router>

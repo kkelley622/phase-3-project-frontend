@@ -24,7 +24,6 @@ const NewPatient = ( {handleSubmit} ) => {
             diagnosis: "", 
             nurse_id: 0
         })
-        alert("The Patient Was Successfully Added")
       }
 
     
