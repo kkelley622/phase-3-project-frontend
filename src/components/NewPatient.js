@@ -14,8 +14,8 @@ const NewPatient = ( {handleSubmit} ) => {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
-    const clearForm = (e, patientObj) => {
-        handleSubmit(e, patientObj)
+    const clearForm = (e) => {
+        handleSubmit(e, formData)
         setFormData({
             firstname: "",
             lastname: "",

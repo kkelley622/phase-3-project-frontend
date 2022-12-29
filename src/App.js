@@ -26,6 +26,7 @@ const App = () => {
   }, [])
 
   const handlePatientSubmit = (e, patientObj) => {
+    console.log(patientObj)
     e.preventDefault()
     fetch("http://localhost:9292/patients", {
         method: 'POST',
