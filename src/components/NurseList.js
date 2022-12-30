@@ -12,7 +12,6 @@ const NurseList = () => {
   }, []);
 
   const handleNurseSubmit = (e, nurseObj) => {
-    console.log(nurseObj)
     e.preventDefault()
     fetch("http://localhost:9292/nurses", {
         method: 'POST',
