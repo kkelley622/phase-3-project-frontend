@@ -22,8 +22,7 @@ const PatientCard = ( {patient, onDeletePatient, onUpdatePatient} ) => {
     <div>
       <div className="card">
         <div className="card-body" >
-          <h5 className="card-title">{patient.lastname}, {patient.firstname}</h5>
-          <p className="card-text">Room Number: {patient.room_number}</p>
+          <h5 className="card-title">{patient.room_number} {patient.lastname}, {patient.firstname}</h5>
           <p className="card-text">Diagnosis: {patient.diagnosis}</p>
           <p className="card-text">Nurse: {patient.nurse.firstname}</p>
           <div>Change Nurse ID: {<EditPatient patient={patient} handleUpdatePatient={handleUpdatePatient}/>}</div>

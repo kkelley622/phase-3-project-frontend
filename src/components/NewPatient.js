@@ -87,6 +87,7 @@ const NewPatient = ( {handleSubmit} ) => {
                     name="nurse_id" 
                     aria-label="nurse_id"
                     value={formData.nurse_id}
+                    min={1}
                     onChange={handleChange}
                     required
                 />

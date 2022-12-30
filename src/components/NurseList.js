@@ -24,7 +24,7 @@ const NurseList = () => {
     .then(data => setNurses([data, ...nurses]))
   }
 
-  const nurseCards = nurses.sort(((a,b) => a.lastname > b.lastname ? 1 : -1)).map(nurse => <NurseCard key={nurse.id} nurse={nurse}/>)
+  const nurseCards = nurses.sort(((a,b) => a.firstname > b.firstname ? 1 : -1)).map(nurse => <NurseCard key={nurse.id} nurse={nurse}/>)
 
   return (
     <div>
