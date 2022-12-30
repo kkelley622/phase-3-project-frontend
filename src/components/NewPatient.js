@@ -27,10 +27,11 @@ const NewPatient = ( {handleSubmit} ) => {
       }
 
   return (
-    <div className='patient-form'>
-        <form onSubmit={clearForm}>
-            <label>First Name: </label>
+    <div >
+        <form onSubmit={clearForm} className='form-container'>
+            <label className='form-label'>First Name: </label>
                 <input
+                    className='form-input'
                     type="text" 
                     name="firstname" 
                     aria-label="firstname"
@@ -39,8 +40,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Last Name: </label>
+            <label className='form-label'>Last Name: </label>
                 <input
+                    className='form-input'
                     type="text" 
                     name="lastname" 
                     aria-label="lastname"
@@ -49,8 +51,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Age: </label>
+            <label className='form-label'>Age: </label>
                 <input
+                    className='form-input'
                     type="number" 
                     name="age" 
                     aria-label="age"
@@ -59,8 +62,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Room Number: </label>
+            <label className='form-label'>Room Number: </label>
                 <input
+                    className='form-input'
                     type="number" 
                     name="room_number" 
                     aria-label="room_number"
@@ -71,8 +75,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Diagnosis: </label>
+            <label className='form-label'>Diagnosis: </label>
                 <input
+                    className='form-input'
                     type="text" 
                     name="diagnosis" 
                     aria-label="diagnosis"
@@ -81,8 +86,9 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <label>Nurse ID: </label>
+            <label className='form-label'>Nurse ID: </label>
                 <input
+                    className='form-input'
                     type="number" 
                     name="nurse_id" 
                     aria-label="nurse_id"
@@ -92,7 +98,7 @@ const NewPatient = ( {handleSubmit} ) => {
                     required
                 />
                 <br></br>
-            <input type="submit"></input>
+            <input type="submit" className='form-submit'></input>
         </form>
     </div>
   )

@@ -27,7 +27,7 @@ const NurseList = () => {
   const nurseCards = nurses.sort(((a,b) => a.firstname > b.firstname ? 1 : -1)).map(nurse => <NurseCard key={nurse.id} nurse={nurse}/>)
 
   return (
-    <div>
+    <div className='nurse-list'>
       <NewNurse handleSubmit={handleNurseSubmit}/>
       <div>{nurseCards}</div>
     </div>

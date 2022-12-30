@@ -6,10 +6,10 @@ const NurseCard = ( {nurse} ) => {
   
   
   return (
-    <div>
-      <div className="card">
-        <div className="card-body" >
-          <h5 className="card-title">{nurse.firstname} {nurse.lastname} ID: {nurse.id}</h5>
+    <div className="nurse-card">
+      <div >
+        <div className="card-body">
+          <h className="card-title">{nurse.firstname} {nurse.lastname} ID: {nurse.id}</h>
           <p className="card-text">Phone Number: {nurse.phone_ext}</p>
           <p className="card-text">Shift: {nurse.shift}</p>
           <p className="card-text">Assigned: {assignedRooms.join(', ')}</p>
