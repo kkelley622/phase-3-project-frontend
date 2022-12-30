@@ -25,12 +25,22 @@ const PatientList = ( ) => {
   }
 
   const onDeletePatient = (deletedPatient) => {
-    console.log(deletedPatient)
     const updatedPatients = patients.filter((patient) => patient.id !== deletedPatient.id);
     setPatients(updatedPatients);
   }
 
-  const patientCards = patients.sort(((a,b) => a.room_number > b.room_number ? 1 : -1 )).map(patient => <PatientCard key={patient.id} patient={patient} onDeletePatient={onDeletePatient}/>)
+  const onUpdatePatient = (updatedPatientObj) => {
+    const updatedPatients = patients.map(patient => {
+      if (patient.id === updatedPatientObj.id) {
+        return updatedPatientObj
+      } else {
+        return patient
+      }
+    });
+    setPatients(updatedPatients)
+  }
+
+  const patientCards = patients.sort(((a,b) => a.room_number > b.room_number ? 1 : -1 )).map(patient => <PatientCard key={patient.id} patient={patient} onDeletePatient={onDeletePatient} onUpdatePatient={onUpdatePatient}/>)
 
   return (
     <div>
