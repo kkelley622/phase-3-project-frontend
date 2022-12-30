@@ -43,7 +43,7 @@ const PatientList = ( ) => {
   const patientCards = patients.sort(((a,b) => a.room_number > b.room_number ? 1 : -1 )).map(patient => <PatientCard key={patient.id} patient={patient} onDeletePatient={onDeletePatient} onUpdatePatient={onUpdatePatient}/>)
 
   return (
-    <div>
+    <div className='patient-list'>
       <NewPatient handleSubmit={handlePatientSubmit}/>
       <br/>
       <div>{patientCards}</div>

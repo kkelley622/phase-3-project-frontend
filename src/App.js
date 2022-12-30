@@ -11,20 +11,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
   
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path= "/">
-          <Home />
-        </Route>
-        <Route exact path= "/nurses">
-          <NurseList />
-        </Route>
-        <Route exact path= "/patients">
-          <PatientList />
-        </Route>
-      </Switch>
-    </Router>
+    <div className='App'>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path= "/">
+            <Home />
+          </Route>
+          <Route exact path= "/nurses">
+            <NurseList />
+          </Route>
+          <Route exact path= "/patients">
+            <PatientList />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   )
 }
 

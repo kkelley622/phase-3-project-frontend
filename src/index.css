@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,57 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar-container {
+  background-color: orange;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+.navbar-font {
+  color: white;
+  margin-left: 1.0rem;
+  font-weight: 10rem;
+  
+}
+
+.patient-list {
+  padding: 25px; 
+  height: 100px;
+  color: black;
+  margin-top: 60px;
+  width: 100%;
+  font-weight: 150;
+}
+
+.patient-card {
+  padding: 5px; 
+  width: 100%;
+  height: 100px;
+  color: black;
+  margin: center;
+  background-color: #80caca;
+  color: black;
+  opacity: 0.7;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.patient-form {
+  padding: 25px; 
+  width: 100%;
+  color: black;
+  /* background-color: transparent; */
+  margin-top: 98px;
+  height: 10rem;
+  padding: center;
+  font-weight: 200;
+
+  background-color: #CDD2BA;
+  opacity: 0.7;
+  padding: 10px;
 }

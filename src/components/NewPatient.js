@@ -27,7 +27,7 @@ const NewPatient = ( {handleSubmit} ) => {
       }
 
   return (
-    <div>
+    <div className='patient-form'>
         <form onSubmit={clearForm}>
             <label>First Name: </label>
                 <input
