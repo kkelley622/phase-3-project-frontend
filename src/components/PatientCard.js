@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import EditPatient from './EditPatient';
 
 const PatientCard = ( {patient, onDeletePatient, onUpdatePatient} ) => {
-  const [edit, setEdit] = useState(false);
 
   const handleDeleteClick = () => {
     fetch(`http://localhost:9292/patients/${patient.id}`, {
