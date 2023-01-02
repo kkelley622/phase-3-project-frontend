@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Nurse Patient Assignment Project Frontend
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+I built this REACT application for my phase-3 project of Flatiron School software engineering flex pilot program. A user can view a list of nurses, or add a nurse to the unit. A user can also view a list of patients, or add a patient to the unit.
 
-### `yarn start`
+## Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Navigate to this folders directory. (frontend)
+- Run 'npm start' or 'yarn start'. This will launch the server on localhost:3000, and should open the application in your web browser.
+- Click on the Nurses tab of the navbar to view a list of nurses on the hypothetical unit. Here you can also add a nurse to the unit.
+- Each nurse should have included which rooms they are currently assigned to. 
+- Click on the Patients tab of the navbar to view a list of patients on the unit. Here you can also add a patient to the unit. 
+- When adding a patient assign their nurse by looking at the nurse's badge number you would like to assign the patient to.
+- You can also change which nurse a patient is assigned to by inputing the new nurses ID number in the designated form of the particular patient's card.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Have npm or yarn installed 
+- Have json-server installed
 
-### `yarn build`
+## Conclusion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This REACT application mimics a hospital units patient and nursing assignements. We are able to view all the patients on the unit, as well as add any new ones. We can see and change which nurse is assigned to each individual patient, and we can discharge a patient when they are able to leave the unit. We can also view a list of all the nurses on the unit. We can add a new nurse to the list. The list of nurses also includes which rooms they are currently assigned to.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All patient and nurse names from my sample data are inspired by family members, friends or fictional characters.
+- Patient names and diagnosis are not taken from any real life experience or information. 
+- Thank you to my instructor Enoch Griffith for his lectures during this phase of cirriculum. 
+- Thank you to my accountability coach Talia Salzburg for helping me stay focused and giving me inspiration for the content of my poject.
+- And thank you to fellow student Sandra for helping me with styling using CSS.

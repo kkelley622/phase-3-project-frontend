@@ -21,6 +21,7 @@ const EditPatient = ( {patient, handleUpdatePatient} ) => {
         .then(res => res.json())
         .then(updatedNurseId => handleUpdatePatient(updatedNurseId))
     }
+    
   return (
     <form className="edit-message" onSubmit={handleFormSubmit}>
         <input
