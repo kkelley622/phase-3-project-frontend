@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
-import Navbar from './Navbar';
-import Home from './Home';
-import NurseList from './NurseList'
-import PatientList from './PatientList'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import NurseList from './components/NurseList'
+import PatientList from './components/PatientList'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
