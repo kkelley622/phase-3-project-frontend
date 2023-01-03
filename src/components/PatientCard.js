@@ -24,7 +24,7 @@ const PatientCard = ( {patient, onDeletePatient, onUpdatePatient} ) => {
           <h className="card-title">{patient.room_number} {patient.lastname}, {patient.firstname}</h>
           <p className="card-text">Diagnosis: {patient.diagnosis}</p>
           <p className="card-text">Nurse: {patient.nurse.firstname}</p>
-          <div>Change Nurse ID: {<EditPatient patient={patient} handleUpdatePatient={handleUpdatePatient}/>}</div>
+          <div>Change Nurse (insert badge number): {<EditPatient patient={patient} handleUpdatePatient={handleUpdatePatient}/>}</div>
           <button onClick={handleDeleteClick}>DISCHARGE</button>
         </div>
       </div>

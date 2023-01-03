@@ -9,10 +9,11 @@ const NurseCard = ( {nurse} ) => {
     <div className="nurse-card">
       <div >
         <div className="card-body">
-          <h className="card-title">{nurse.firstname} {nurse.lastname} ID: {nurse.id}</h>
+          <h className="card-title">{nurse.firstname} {nurse.lastname}</h>
+          <p className="card-text">Badge Number: {nurse.id}</p>
           <p className="card-text">Phone Number: {nurse.phone_ext}</p>
           <p className="card-text">Shift: {nurse.shift}</p>
-          <p className="card-text">Assigned: {assignedRooms.join(', ')}</p>
+          <p className="card-text">Rooms Assigned: {assignedRooms.join(', ')}</p>
         </div>
       </div>
     </div>
