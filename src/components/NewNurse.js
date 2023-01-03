@@ -67,7 +67,6 @@ const NewNurse = ( {handleSubmit} ) => {
                     name="phone_ext" 
                     aria-label="phone_ext"
                     value={formData.phone_ext}
-                    min={0}
                     max={999}
                     onChange={handleChange}
                     required

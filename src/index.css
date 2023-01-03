@@ -47,7 +47,7 @@ code {
 .patient-card {
   padding: 5px; 
   width: 50%;
-  height: 125px;
+  height: 130px;
   margin: center;
   background-color: rgb(62, 117, 200);
   color: white;
@@ -68,7 +68,7 @@ code {
 .nurse-card {
   padding: 5px; 
   width: 50%;
-  height: 100px;
+  height: 110px;
   color: black;
   margin: center;
   background-color: rgb(62, 117, 200);
